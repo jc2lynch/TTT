@@ -1,0 +1,23 @@
+#game{
+
+	
+}
+#gameboard{
+    background: deepskyblue;
+    width: 330px;
+    height: 330px;
+}
+.tiles{
+    background: purple;
+    height: 100px;
+    width: 100px;
+    border: 1px solid;
+    display: inline-block;
+}
+
+#chalk{
+
+}
+#eraser{
+
+}
