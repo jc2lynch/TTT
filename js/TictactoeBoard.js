@@ -1,13 +1,12 @@
 angular
-// 
 	.module('tictactoeApp')
-	.factory('GameBoard', GameBoardFunc);
+	.factory('TictactoeBoard', TictactoeBoard);
 
-function GameBoardFunc(){
+function TictactoeBoard(){
 
 	var TILE_STATES = ['unselected-tile', 'X', 'O'];
 
-	var GameBoard = function( numTiles){
+	 TTTBoard = function( numTiles ){
 		this.numTiles=numTiles;
 		this.tiles= new Array (numTiles);
 
@@ -32,7 +31,7 @@ function GameBoardFunc(){
 		}
 	}
 
-	return GameBoard;
+	return TictactoeBoard;
 
 //need a function that Checks for a winner. 
 

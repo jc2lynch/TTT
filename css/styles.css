@@ -2,12 +2,12 @@
 
 	
 }
-#gameboard{
+#board{
     background: deepskyblue;
     width: 330px;
     height: 330px;
 }
-.tiles{
+.squares{
     background: purple;
     height: 100px;
     width: 100px;
