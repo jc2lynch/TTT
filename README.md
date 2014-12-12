@@ -1,3 +1,4 @@
+
 The game board will appear on the screen. iife
 
 The person who initiates the game will be X, The second player will be O.
@@ -37,6 +38,7 @@ The game board will search for a winner if there is a winner that winner will be
 O has his choice of 2 tiles that have not been chosen. when he clicks on one, it will change to an O.
 
 There is now only 1 tile left
+
 
 
 
