@@ -1,4 +1,10 @@
-#game{background-color: green;
+#game{
+    background-color: green;
+/*    vertical-align: top;
+*/  height: 500px;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
 
 	
 }
@@ -6,6 +12,10 @@
     background: deepskyblue;
     width: 330px;
     height: 330px;
+    vertical-align: top;
+    text-align: center;
+
+
 }
 .squares{
     background: purple;
@@ -15,6 +25,9 @@
     display: inline-block;
     color: white;
     text-align: center;
+    font-size: 640%;
+    padding: 1%;
+
 
 }
 
