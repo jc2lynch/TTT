@@ -9,8 +9,8 @@
 }
 .squares{
     background: purple;
-    height: 100px;
-    width: 100px;
+    height: 95px;
+    width: 95px;
     border: 1px solid;
     display: inline-block;
 }

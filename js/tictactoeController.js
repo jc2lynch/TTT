@@ -4,7 +4,7 @@ angular
 
 TictactoeController.$inject = ['TictactoeBoard'];
 
-function TictactoeController(){
+function TictactoeController(TictactoeBoard){
 		var numTiles= 9;
 
 

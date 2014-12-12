@@ -31,7 +31,7 @@ function TictactoeBoard(){
 		}
 	}
 
-	return TictactoeBoard;
+	return TTTBoard;
 
 //need a function that Checks for a winner. 
 
