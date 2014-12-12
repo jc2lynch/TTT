@@ -1,4 +1,4 @@
-#game{
+#game{background-color: green;
 
 	
 }
@@ -13,11 +13,20 @@
     width: 95px;
     border: 1px solid;
     display: inline-block;
+    color: white;
+    text-align: center;
+
 }
 
 #chalk{
+    width: 30px;
+    height: 30px;
+    background: #ffff00;
 
 }
 #eraser{
+    width: 30px;
+    height: 30px;
+    background: orangered;
 
 }

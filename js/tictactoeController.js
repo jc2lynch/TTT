@@ -2,15 +2,32 @@ angular
 	.module('tictactoeApp')
 	.controller('TictactoeController',TictactoeController);
 
-TictactoeController.$inject = ['TictactoeBoard'];
 
-function TictactoeController(TictactoeBoard){
-		var numTiles= 9;
+function TictactoeController(){
+var self = this;
 
 
-	this.Board = new TictactoeBoard( numTiles );
+	self.clickBox= clickBox;
+	self.Board = new Array ( 9 );
+	self.turncounter= 1;
 
-	this.name = "Chris";
+	function clickBox($index){
+		//this is the condition
+		if (self.Board[$index]===undefined){
+			if (self.turncounter===1){
+				self.Board[$index]="X";
+				self.turncounter=2;
+			}
+			else{ 
+				self.Board[$index]="O";
+				self.turncounter=1;
+			}
+
+		}
+	}
+
+
+
 };
 
 
