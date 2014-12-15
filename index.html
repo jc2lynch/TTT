@@ -8,10 +8,12 @@
         <script src="js/app.js"></script>
         <script src="js/full.js"></script>
         <script src="js/TictactoeController.js"></script>
+        <script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script>
+        <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+
 
     </head>
 
-<!-- The body must be connected to the ng-app -->
 <body ng-controller="TictactoeController as tic">
 	<section id= "game">
         <h1>Tic-Tac-Toe</h1>
@@ -31,7 +33,15 @@
         </div>
 
         </div>
+            <div class="button">
                 <button ng-click="tic.newGame()">New Game</button>
+            </div>
+            <p>
+            Rules:<br>
+X moves first the first game, then O moves first and continues to alternate.<br>
+A piece may be placed on any empty space.<br>
+A player wins by being the first to connect a line of friendly pieces from one side or corner of the board to the other.<br>
+The game ends when either one player wins or it is no longer possible for a player to win (in which case the result is a draw).</p>
 
 
 	</section>
@@ -39,3 +49,10 @@
 
 </body>
 </html>
+
+<!-- what to cover in demo day
+5 mins for the demonstration
+include the following
+full start to finish of game
+address what the biggest takeaway from the project was
+what was the biggest obsticle? -->

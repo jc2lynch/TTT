@@ -1,46 +1,47 @@
 #game{
-    background-color: green;
-    vertical-align: top;
-  height: 500px;
+
+    height: 500px;
     width: 500px;
     text-align: center;
     margin: 0 auto;
+    background: radial-gradient(black,grey, white); 
+    border-radius: 15px;
+    font-family: 'Droid Sans', sans-serif;
+    font-variant: small-caps;
+    font-weight: bold;
+/*    border: 1px solid grey;
+*/
 
 	
 }
 #board{
-    background: deepskyblue;
+    
     width: 330px;
     height: 330px;
     vertical-align: top;
     text-align: center;
+    background: radial-gradient(rgba(86, 92,93,1), rgba(198, 197, 194 ,1));  
+   margin: 0 auto;
+    border-radius: 45px;
+
+
 
 
 }
 .squares{
-    background: purple;
+    background: radial-gradient( grey, white); 
     height: 95px;
     width: 95px;
     border: 1px solid;
     display: inline-block;
     color: white;
     text-align: center;
-    font-size: 640%;
+    font-size: 590%;
     padding: 1%;
     vertical-align: top;
+    border-radius: 45px;
+    border:1px solid grey;
+    color: black;
+    
 
 
-}
-
-#chalk{
-    width: 30px;
-    height: 30px;
-    background: #ffff00;
-
-}
-#eraser{
-    width: 30px;
-    height: 30px;
-    background: orangered;
-
-}

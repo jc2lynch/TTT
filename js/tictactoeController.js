@@ -3,19 +3,26 @@ angular
 	.module('tictactoeApp')
 	.controller('TictactoeController',TictactoeController);
 
+	var myDataRef = new Firebase('https://ticytac.firebaseio.com/');
+
+
 
 function TictactoeController(){
 var self = this;
+var catsGame = catsGame
 
 	//clickBox changes the box 
 	self.clickBox= clickBox;
 	//this is what created the board
 	self.Board = new Array ( 9 );
-	//turncounter
+	//turncounter allows to switch between x and O
 	self.turncounter= 1;
 	self.winner = "";
 	// console.log(self.Board.fullArray())
 	self.newGame= newGame;
+	//need to run a click counter in order to set up my cats game
+	self.catsGame= catsGame;
+	self.clickCount =0;
 
 	function clickBox($index){
 		//this is the condition
@@ -23,19 +30,27 @@ var self = this;
 			if (self.turncounter==1){
 				self.Board[$index]="X";
 				self.turncounter=2;	
+				 
 			}
 			else{ 
 				self.Board[$index]="O";
 				self.turncounter=1;
 			}
+			self.clickCount++;
+			console.log(self.clickCount + " This is the click count")
 		}
 		
 		winner();	
 
+		if (self.clickCount === 9) {
+			console.log("rt;soerig")
+
+		}
+
 	}
 	//this will determine the winner 
 	function winner(){
-		if ((self.Board[0]==="X" && self.Board[1]==="X" && self.Board[2]==="X")||
+		if  ((self.Board[0]==="X" && self.Board[1]==="X" && self.Board[2]==="X")||
 			(self.Board[3]==="X" && self.Board[4]==="X" && self.Board[5]==="X")||
 			(self.Board[6]==="X" && self.Board[7]==="X" && self.Board[8]==="X")||
 			(self.Board[0]==="X" && self.Board[3]==="X" && self.Board[6]==="X")||
@@ -59,14 +74,21 @@ var self = this;
 				// return "O is the winner";
 
 				}
-			// else (self.board[0]!= null && self.board[1]!= null && self.board[0]!= null && self.board[2]!= null && self.board[3]!= null && self.board[4]!= null &&
-			// self.board[5]!= null && self.board[6]!= null && self.board[7]!= null && self.board[8])
-			// 	console.log("cat's game")
+
+			
+			
 
 
+			function catsGame(){
+			//two conditions need to be met
+			// 1. there must be nine click met on the turn counter and 
+			//2. none of the conditions in the winner functions may be met
 
+
+			}
 
 	}
+//thsi creates a new game board  it can only be initiated after a winneris found
 function newGame() {
    self.Board = new Array (9);
 
@@ -83,10 +105,5 @@ function newGame() {
 
 
 
-//need a function to look for the winner
 
-//need a function for clear board
-//need a function fpr start game
 
-//make a constructor function for both of the players
-//need to figure out how to 
